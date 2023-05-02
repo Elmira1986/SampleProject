@@ -33,3 +33,9 @@ public class EmailManager {
         return sendResult;
     }
 }
+
+/**
+ git config --global user.name "Elmira"
+
+git config --global user.email "elmirakazakbaeva@yahoo.com"
+ */
