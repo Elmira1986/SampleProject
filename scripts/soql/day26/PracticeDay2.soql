@@ -1,0 +1,60 @@
+
+//SELECT  Id, Author__c, Price__c, Description__c, Year__c
+//FROM Book__c
+//WHERE Description__c != NULL
+//OR Price__c != NULL 
+
+//SELECT FIELDS(ALL)
+//FROM Book__c
+//LIMIT 200
+
+// LIKE  % (WILD CARD, it can represent 0 or more characters )
+// Get all contacts First Name and LastName 
+// if FirstName starts with letter A 
+
+//SELECT  FirstName, LastName
+//FROM Contact
+//WHERE FirstName LIKE 'A%'
+
+
+//SELECT  FirstName, LastName
+//FROM Contact
+//WHERE FirstName LIKE '%A'
+
+//SELECT FirstName, LastName 
+//FROM Contact
+//WHERE FirstName LIKE '%A%'
+
+
+//SELECT FirstName, LastName 
+//FROM Contact
+//WHERE FirstName LIKE 'A%Y'
+
+
+//SELECT FirstName, LastName
+//FROM Contact
+//WHERE FirstName LIKE 'A__Y'
+
+
+//SELECT FirstName, LastName
+//FROM Contact
+//WHERE CreatedDate = YESTERDAY
+
+
+//SELECT Name, CloseDate, StageName
+//FROM Opportunity
+//WHERE CreatedDate = LAST_N_WEEKS:2
+
+
+//SELECT Name, CloseDate, StageName
+//FROM Opportunity
+//WHERE CloseDate = LAST_90_DAYS
+//ORDER BY CloseDate Desc
+
+
+
+
+
+
+
+

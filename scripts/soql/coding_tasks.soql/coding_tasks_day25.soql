@@ -1,0 +1,58 @@
+
+#1.
+SELECT Company ,Name, Email
+FROM Lead
+WHERE Status = 'Open - Not Contacted'
+ORDER BY Name
+
+#2. 
+SELECT  Name, Salutation, Title, Company, Phone, State, Email
+FROM Lead
+WHERE State != NULL
+
+#3. 
+SELECT Name, Country, Title, Company, Phone, State, Email
+FROM Lead
+WHERE State IN ('Fl', 'VA', 'MD')
+OR Country = 'France'
+
+#4. 
+SELECT Name ,LeadSource, Title, Company
+FROM Lead
+WHERE Title IN ('CFO' , 'CEO')
+OR LeadSource = 'Web'
+
+#5. 
+SELECT Name ,Fax, Title, Company 
+FROM Lead
+WHERE Fax != NULL
+
+#6. 
+SELECT  Name ,State, Title, Company
+FROM Lead
+WHERE Title != NULL 
+OR State = null
+
+#7. 
+   SELECT  Name, AnnualRevenue, Industry
+  FROM  Account
+   WHERE Industry = 'Finance'
+   ORDER BY AnnualRevenue DESC LIMIT 2
+
+#8. 
+SELECT Name,ProductCode, CreatedDate 
+FROM Product2
+ORDER BY ProductCode
+
+ #9. 
+   SELECT Name,Rating,AnnualRevenue, Industry
+    FROM Account
+    WHERE Rating IN ('Hot', 'Warm')
+    ORDER BY CreatedDate DESC
+
+ #10.
+   SELECT Name ,LeadSource, Title, Company
+   FROM Lead
+   WHERE LeadSource NOT IN ('Web', 'Purchased List', 'Event', 'Phone Inquiry') 
+   
+   

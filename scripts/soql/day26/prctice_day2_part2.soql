@@ -1,0 +1,31 @@
+
+//SELECT  Name, AccountId, Account.Name
+//FROM Contact
+//WHERE AccountId != null
+
+
+//SELECT  Subject, Account.Name
+//FROM Case
+//WHERE AccountId != null
+
+
+// Get all the case records Subject and Account Name
+//  that belong to Account with Name 
+// starts with United 
+
+//SELECT  Subject, Account.Name, Contact.Name, CreatedBy.Name
+//FROM Case
+//WHERE Account.Name LIKE 'United%'
+
+
+// Get all opportunity Name, Owner Name, Account Name  
+// From Opportunity 
+
+SELECT Name, Owner.Name, Account.Name
+FROM Opportunity
+
+
+
+
+
+
